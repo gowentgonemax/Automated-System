@@ -1,0 +1,21 @@
+Dim streamBeverage As New StreamReader("Beverage.dat")
+        Dim streamAppetizer As New StreamReader("Appetizer.dat")
+        Dim streamMainCourse As StreamReader '("MainCourse.dat")
+            Dim streamDessert As StreamReader '("Dessert.dat")
+
+        Dim line As String
+        Dim arrFields(100) As String
+        Dim objState As New Food
+        Do While (streamBeverage.Peek <> -1)
+
+            line = streamBeverage.ReadLine()
+            arrFields = line.Split(",")
+            ' Dim objState As New Food
+            objState.foodName = arrFields(0).Trim()
+            objState.foodPrice = Convert.ToDouble(arrFields(1).Trim())
+            objState.foodCalories = Convert.ToInt32(arrFields(2).Trim())
+            listBeverages.Add(objState.foodName) ' & objState.foodPrice & objState.foodCalories)
+        Loop
+        For Each obj As String In listBeverages
+            cbBeverage.Items.Add(obj)
+        Next

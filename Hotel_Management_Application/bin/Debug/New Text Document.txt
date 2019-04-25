@@ -1,0 +1,23 @@
+
+        If cbAppetizer.Text = "Buffalo Wings" Then
+            lblPriceAppetizer.Text = priceAppBufWing.ToString("C")
+            lblPriceAppetizer.Text = calAppBufWing.ToString()
+        ElseIf cbAppetizer.Text = "Buffalo Fingers" Then
+            lblPriceAppetizer.Text = priceAppBuffFing.ToString("C")
+            lblPriceAppetizer.Text = calAppBuffFing.ToString()
+        ElseIf cbAppetizer.Text = "Potatoes Skins" Then
+            lblPriceAppetizer.Text = priceAppPotato.ToString("C")
+            lblPriceAppetizer.Text = calAppPotato.ToString()
+        ElseIf cbAppetizer.Text = "Pizza Nachos" Then
+            lblPriceAppetizer.Text = priceAppPizza.ToString("C")
+            lblPriceAppetizer.Text = calAppPizza.ToString()
+        ElseIf cbAppetizer.Text = "Mushroom Caps" Then
+            lblPriceAppetizer.Text = priceAppMush.ToString("C")
+            lblPriceAppetizer.Text = calAppMush.ToString()
+        ElseIf cbAppetizer.Text = "Shrimp Cocktail" Then
+            lblPriceAppetizer.Text = priceAppShrimp.ToString("C")
+            lblPriceAppetizer.Text = calAppShrimp.ToString()
+        ElseIf cbAppetizer.Text = "Chips And Salsa" Then
+            lblPriceAppetizer.Text = priceAppChipSalsa.ToString("C")
+            lblPriceAppetizer.Text = calAppChipSalsa.ToString()
+        End If

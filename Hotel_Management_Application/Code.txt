@@ -1,0 +1,37 @@
+Try
+                streamBeverage = File.OpenText("Beverage.dat")
+                Do Until streamBeverage.EndOfStream = True
+                    cbBeverage.Items.Add(streamBeverage.ReadLine)
+                Loop
+                streamBeverage.Close()
+            Catch ex As Exception
+                MessageBox.Show("Beverage.dat File can't open")
+            End Try
+
+            Try
+                streamAppetizer = File.OpenText("Appetizer.dat")
+                Do Until streamAppetizer.EndOfStream = True
+                    cbAppetizer.Items.Add(streamAppetizer.ReadLine)
+                Loop
+                streamAppetizer.Close()
+            Catch ex As Exception
+                MessageBox.Show("Appetizer.dat File can't open")
+            End Try
+            Try
+                streamDessert = File.OpenText("Dessert.dat")
+                Do Until streamDessert.EndOfStream = True
+                    cbDesserts.Items.Add(streamDessert.ReadLine)
+                Loop
+                streamDessert.Close()
+            Catch ex As Exception
+                MessageBox.Show("Dessert.dat File can't open")
+            End Try
+            Try
+                streamMainCourse = File.OpenText("MainCourse.dat")
+                Do Until streamMainCourse.EndOfStream = True
+                    cbMainCourse.Items.Add(streamMainCourse.ReadLine)
+                Loop
+                streamMainCourse.Close()
+            Catch ex As Exception
+                MessageBox.Show("MainCourse File can't open")
+            End Try
